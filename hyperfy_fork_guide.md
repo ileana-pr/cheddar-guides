@@ -15,6 +15,41 @@ Hey there! 👋 We're excited that you want to contribute to Hyperfy or build yo
    git remote add upstream https://github.com/hyperfy-xyz/hyperfy.git
    ```
 
+## Working with Upstream Branches 🌿
+
+### Viewing Available Branches
+To see all available branches from the upstream repository:
+```bash
+git fetch upstream
+git branch -r
+```
+This will show you all remote branches, including:
+- `upstream/main` - The main branch
+- `upstream/dev` - The development branch
+- Various feature branches like `upstream/build-mode`, `upstream/cam-zoom`, etc.
+
+### Creating Local Branches from Upstream
+To work on an upstream branch locally:
+```bash
+git checkout -b branch-name upstream/branch-name
+```
+For example, to work on the dev branch:
+```bash
+git checkout -b dev upstream/dev
+```
+
+### Managing Multiple Workflows
+You can maintain separate workflows for:
+1. Contributing to upstream:
+   - Work on branches tracking upstream (e.g., `dev`)
+   - Push to your fork: `git push origin dev`
+   - Create PRs from your fork to upstream
+
+2. Your own projects:
+   - Create new branches from your main: `git checkout -b my-feature`
+   - Push to your fork: `git push origin my-feature`
+   - Keep these separate from upstream contributions
+
 ## Understanding Your Repository Structure 🔄
 
 Your repository will have two remotes:
