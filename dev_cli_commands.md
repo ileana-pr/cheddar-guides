@@ -1,164 +1,234 @@
-# Developer's CLI Command Guide
+# 🖥️ Developer's CLI Command Guide
 
-## Process Management
+<div align="center">
+  <i>A comprehensive reference for command-line tools used in daily development workflows</i>
+</div>
+
+---
+
+## 🔍 Process Management
 
 ### View Processes
-- `ps aux` - List all running processes
-- `ps -ef` - Full format listing of all processes
-- `top` - Interactive process viewer (press 'q' to quit)
-- `htop` - Enhanced interactive process viewer with colors and graphs
-- `ps -ef | grep "keyword"` - Find processes containing keyword
-- `ps -ef | grep 3000` - Find processes using port 3000
+| Command | Description |
+|---------|-------------|
+| `ps aux` | List all running processes |
+| `ps -ef` | Full format listing of all processes |
+| `top` | Interactive process viewer (press 'q' to quit) |
+| `htop` | Enhanced interactive process viewer with colors and graphs |
+| `ps -ef \| grep "keyword"` | Find processes containing keyword |
+| `ps -ef \| grep 3000` | Find processes using port 3000 |
 
 ### Process Control
-- `kill PID` - Terminate a process by its process ID
-- `kill -9 PID` - Force terminate a process
-- `killall processname` - Kill all processes with the given name
-- `pkill processname` - Similar to killall, sends signal to processes
-- `nohup command &` - Run command immune to hangups, output to nohup.out
-- `command &` - Run command in background
+| Command | Description |
+|---------|-------------|
+| `kill PID` | Terminate a process by its process ID |
+| `kill -9 PID` | Force terminate a process |
+| `killall processname` | Kill all processes with the given name |
+| `pkill processname` | Similar to killall, sends signal to processes |
+| `nohup command &` | Run command immune to hangups, output to nohup.out |
+| `command &` | Run command in background |
 
-## File Operations
+---
+
+## 📁 File Operations
 
 ### Navigation and Viewing
-- `ls -la` - List all files with details
-- `cd path/to/directory` - Change directory
-- `pwd` - Print working directory
-- `cat filename` - Display file content
-- `less filename` - View file content with pagination
-- `head -n 10 filename` - Show first 10 lines
-- `tail -n 10 filename` - Show last 10 lines
-- `tail -f logfile` - Follow file updates in real-time
+| Command | Description |
+|---------|-------------|
+| `ls -la` | List all files with details |
+| `cd path/to/directory` | Change directory |
+| `pwd` | Print working directory |
+| `cat filename` | Display file content |
+| `less filename` | View file content with pagination |
+| `head -n 10 filename` | Show first 10 lines |
+| `tail -n 10 filename` | Show last 10 lines |
+| `tail -f logfile` | Follow file updates in real-time |
 
 ### File Management
-- `touch filename` - Create empty file or update timestamp
-- `mkdir directory` - Create directory
-- `mkdir -p path/to/nested/directory` - Create nested directories
-- `rm filename` - Remove file
-- `rm -r directory` - Remove directory and contents
-- `cp source destination` - Copy file
-- `cp -r source_dir destination_dir` - Copy directory recursively
-- `mv source destination` - Move or rename file/directory
-- `find . -name "pattern"` - Find files by name
-- `find . -type f -exec command {} \;` - Execute command on each file
+| Command | Description |
+|---------|-------------|
+| `touch filename` | Create empty file or update timestamp |
+| `mkdir directory` | Create directory |
+| `mkdir -p path/to/nested/directory` | Create nested directories |
+| `rm filename` | Remove file |
+| `rm -r directory` | Remove directory and contents |
+| `cp source destination` | Copy file |
+| `cp -r source_dir destination_dir` | Copy directory recursively |
+| `mv source destination` | Move or rename file/directory |
+| `find . -name "pattern"` | Find files by name |
+| `find . -type f -exec command {} \;` | Execute command on each file |
 
-## Text Processing
+---
+
+## 📝 Text Processing
 
 ### Search and Manipulation
-- `grep "pattern" filename` - Search for pattern in file
-- `grep -r "pattern" directory` - Recursive search
-- `grep -i "pattern" filename` - Case-insensitive search
-- `sed 's/find/replace/g' filename` - Find and replace text
-- `awk '{print $1}' filename` - Print first column
-- `sort filename` - Sort lines alphabetically
-- `uniq filename` - Remove duplicate lines (requires sorted input)
-- `sort filename | uniq` - Sort and remove duplicates
-- `wc -l filename` - Count lines in file
+| Command | Description |
+|---------|-------------|
+| `grep "pattern" filename` | Search for pattern in file |
+| `grep -r "pattern" directory` | Recursive search |
+| `grep -i "pattern" filename` | Case-insensitive search |
+| `sed 's/find/replace/g' filename` | Find and replace text |
+| `awk '{print $1}' filename` | Print first column |
+| `sort filename` | Sort lines alphabetically |
+| `uniq filename` | Remove duplicate lines (requires sorted input) |
+| `sort filename \| uniq` | Sort and remove duplicates |
+| `wc -l filename` | Count lines in file |
 
-## Network Tools
+---
+
+## 🌐 Network Tools
 
 ### Connectivity
-- `ping hostname` - Test connectivity to host
-- `curl URL` - Make HTTP request and show response
-- `wget URL` - Download file from URL
-- `ssh user@hostname` - Connect to remote server
-- `scp file user@hostname:/path` - Copy file to remote server
-- `rsync -avz source user@hostname:/path` - Sync files to remote location
+| Command | Description |
+|---------|-------------|
+| `ping hostname` | Test connectivity to host |
+| `curl URL` | Make HTTP request and show response |
+| `wget URL` | Download file from URL |
+| `ssh user@hostname` | Connect to remote server |
+| `scp file user@hostname:/path` | Copy file to remote server |
+| `rsync -avz source user@hostname:/path` | Sync files to remote location |
 
 ### Ports and Services
-- `netstat -tuln` - List listening ports
-- `lsof -i :portNumber` - List processes using the specified port
-- `ss -tuln` - Socket statistics (modern alternative to netstat)
-- `ifconfig` or `ip addr` - Show network interfaces
-- `dig domain` - DNS lookup
-- `nslookup domain` - Name server lookup
+| Command | Description |
+|---------|-------------|
+| `netstat -tuln` | List listening ports |
+| `lsof -i :portNumber` | List processes using the specified port |
+| `ss -tuln` | Socket statistics (modern alternative to netstat) |
+| `ifconfig` or `ip addr` | Show network interfaces |
+| `dig domain` | DNS lookup |
+| `nslookup domain` | Name server lookup |
 
-## Package Management (Ubuntu/Debian)
+---
 
-- `apt update` - Update package lists
-- `apt upgrade` - Upgrade installed packages
-- `apt install packagename` - Install package
-- `apt remove packagename` - Remove package
-- `dpkg -l` - List all installed packages
+## 📦 Package Management (Ubuntu/Debian)
 
-## Git Commands
+| Command | Description |
+|---------|-------------|
+| `apt update` | Update package lists |
+| `apt upgrade` | Upgrade installed packages |
+| `apt install packagename` | Install package |
+| `apt remove packagename` | Remove package |
+| `dpkg -l` | List all installed packages |
 
-- `git init` - Initialize repository
-- `git clone URL` - Clone repository
-- `git status` - Show working tree status
-- `git add filename` - Stage changes
-- `git commit -m "message"` - Commit changes
-- `git push` - Push commits to remote
-- `git pull` - Pull changes from remote
-- `git branch` - List branches
-- `git checkout branchname` - Switch branches
-- `git log` - Show commit history
-- `git diff` - Show changes between commits
+---
 
-## System Information
+## 🔄 Git Commands
 
-- `df -h` - Disk usage
-- `du -sh directory` - Directory size
-- `free -h` - Memory usage
-- `uname -a` - System information
-- `lscpu` - CPU information
-- `uptime` - System uptime
-- `history` - Command history
+| Command | Description |
+|---------|-------------|
+| `git init` | Initialize repository |
+| `git clone URL` | Clone repository |
+| `git status` | Show working tree status |
+| `git add filename` | Stage changes |
+| `git commit -m "message"` | Commit changes |
+| `git push` | Push commits to remote |
+| `git pull` | Pull changes from remote |
+| `git branch` | List branches |
+| `git checkout branchname` | Switch branches |
+| `git log` | Show commit history |
+| `git diff` | Show changes between commits |
 
-## File Compression
+---
 
-- `tar -czvf archive.tar.gz directory/` - Create compressed archive
-- `tar -xzvf archive.tar.gz` - Extract compressed archive
-- `zip -r archive.zip directory/` - Create zip archive
-- `unzip archive.zip` - Extract zip archive
+## 💻 System Information
 
-## Docker Commands
+| Command | Description |
+|---------|-------------|
+| `df -h` | Disk usage |
+| `du -sh directory` | Directory size |
+| `free -h` | Memory usage |
+| `uname -a` | System information |
+| `lscpu` | CPU information |
+| `uptime` | System uptime |
+| `history` | Command history |
 
-- `docker ps` - List running containers
-- `docker images` - List images
-- `docker build -t name .` - Build image from Dockerfile
-- `docker run -p 8080:80 image` - Run container with port mapping
-- `docker-compose up` - Start services defined in docker-compose.yml
-- `docker exec -it container bash` - Open shell in running container
+---
 
-## Environment and Variables
+## 🗜️ File Compression
 
-- `env` - Display environment variables
-- `echo $VARIABLE` - Display value of environment variable
-- `export VARIABLE=value` - Set environment variable
-- `alias name='command'` - Create command alias
+| Command | Description |
+|---------|-------------|
+| `tar -czvf archive.tar.gz directory/` | Create compressed archive |
+| `tar -xzvf archive.tar.gz` | Extract compressed archive |
+| `zip -r archive.zip directory/` | Create zip archive |
+| `unzip archive.zip` | Extract zip archive |
 
-## User Management
+---
 
-- `sudo command` - Execute command as superuser
-- `whoami` - Show current username
-- `passwd` - Change password
-- `chown user:group file` - Change file ownership
-- `chmod permissions file` - Change file permissions
+## 🐳 Docker Commands
 
-## Process Supervision and Background Jobs
+| Command | Description |
+|---------|-------------|
+| `docker ps` | List running containers |
+| `docker images` | List images |
+| `docker build -t name .` | Build image from Dockerfile |
+| `docker run -p 8080:80 image` | Run container with port mapping |
+| `docker-compose up` | Start services defined in docker-compose.yml |
+| `docker exec -it container bash` | Open shell in running container |
 
-- `screen` - Terminal multiplexer (detach with Ctrl+A, D)
-- `tmux` - Modern terminal multiplexer
-- `jobs` - List background jobs
-- `fg` - Bring job to foreground
-- `bg` - Send job to background
-- `nohup command &` - Run command immune to hangups
-- `command & disown` - Run command in background and disown from shell
+---
 
-## Security and SSH
+## 🔧 Environment and Variables
 
-- `ssh-keygen` - Generate SSH key pair
-- `ssh-copy-id user@hostname` - Copy SSH key to server
-- `openssl enc -aes-256-cbc -in file -out file.enc` - Encrypt file
-- `openssl enc -d -aes-256-cbc -in file.enc -out file` - Decrypt file
+| Command | Description |
+|---------|-------------|
+| `env` | Display environment variables |
+| `echo $VARIABLE` | Display value of environment variable |
+| `export VARIABLE=value` | Set environment variable |
+| `alias name='command'` | Create command alias |
 
-## Tips for Efficient CLI Usage
+---
 
-- Use `Tab` for command completion
-- Press `Ctrl+R` for reverse history search
-- Use `!!` to repeat the last command
-- Use `command | xargs command2` to pass output as arguments
-- Redirect output with `>` (overwrite) or `>>` (append)
-- Pipe commands with `|` to chain operations
-- Combine commands with `&&` (run second if first succeeds) or `;` (run regardless) 
+## 👤 User Management
+
+| Command | Description |
+|---------|-------------|
+| `sudo command` | Execute command as superuser |
+| `whoami` | Show current username |
+| `passwd` | Change password |
+| `chown user:group file` | Change file ownership |
+| `chmod permissions file` | Change file permissions |
+
+---
+
+## ⏱️ Process Supervision and Background Jobs
+
+| Command | Description |
+|---------|-------------|
+| `screen` | Terminal multiplexer (detach with Ctrl+A, D) |
+| `tmux` | Modern terminal multiplexer |
+| `jobs` | List background jobs |
+| `fg` | Bring job to foreground |
+| `bg` | Send job to background |
+| `nohup command &` | Run command immune to hangups |
+| `command & disown` | Run command in background and disown from shell |
+
+---
+
+## 🔒 Security and SSH
+
+| Command | Description |
+|---------|-------------|
+| `ssh-keygen` | Generate SSH key pair |
+| `ssh-copy-id user@hostname` | Copy SSH key to server |
+| `openssl enc -aes-256-cbc -in file -out file.enc` | Encrypt file |
+| `openssl enc -d -aes-256-cbc -in file.enc -out file` | Decrypt file |
+
+---
+
+## 💡 Tips for Efficient CLI Usage
+
+| Technique | Description |
+|-----------|-------------|
+| `Tab` | Use for command completion |
+| `Ctrl+R` | Press for reverse history search |
+| `!!` | Use to repeat the last command |
+| `command \| xargs command2` | Pass output as arguments |
+| `>` or `>>` | Redirect output (overwrite) or (append) |
+| `\|` | Pipe commands to chain operations |
+| `&&` or `;` | Combine commands (run second if first succeeds) or (run regardless) |
+
+<div align="center">
+  <p><strong>Happy command-line coding!</strong></p>
+</div> 

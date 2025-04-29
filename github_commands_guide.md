@@ -1,6 +1,23 @@
-# GitHub Commands Guide
+# 🔄 GitHub Commands Guide
 
-## Basic Git Commands
+<div align="center">
+  <i>Essential Git and GitHub commands for effective version control</i>
+</div>
+
+---
+
+## 📋 Table of Contents
+- [Basic Git Commands](#basic-git-commands)
+- [Remote Repository Management](#remote-repository-management)
+- [File Management](#file-management)
+- [Virtual Environment](#virtual-environment)
+- [Best Practices](#best-practices)
+- [Common Workflow](#common-workflow)
+- [Troubleshooting](#troubleshooting)
+
+---
+
+## 🏁 Basic Git Commands
 
 | Command | Description |
 |---------|-------------|
@@ -10,7 +27,9 @@
 | `git status` | Check the current state of your repository |
 | `git log` | View commit history |
 
-## Remote Repository Management
+---
+
+## 🌐 Remote Repository Management
 
 | Command | Description |
 |---------|-------------|
@@ -18,7 +37,9 @@
 | `git branch -M main` | Rename the current branch to 'main' |
 | `git push -u origin main` | Push your changes to the remote repository |
 
-## File Management
+---
+
+## 📁 File Management
 
 | Command | Description |
 |---------|-------------|
@@ -27,13 +48,17 @@
 | `git revert <commit-id>` | Create a new commit that undoes changes from a specific commit |
 | `git commit --amend -m "message"` | Modify the last commit message |
 
-## Virtual Environment
+---
+
+## 🔧 Virtual Environment
 
 | Command | Description |
 |---------|-------------|
 | `.\venv\Scripts\Activate` | Activate the virtual environment (Windows PowerShell) |
 
-## Best Practices
+---
+
+## 💡 Best Practices
 
 1. Always write clear, descriptive commit messages
 2. Commit related changes together
@@ -41,7 +66,9 @@
 4. Use branches for new features or bug fixes
 5. Keep sensitive information out of your repository (use .gitignore)
 
-## Common Workflow
+---
+
+## 🔄 Common Workflow
 
 1. Initialize repository: `git init .`
 2. Add files: `git add <filename>`
@@ -49,14 +76,38 @@
 4. Link to remote: `git remote add origin <url>`
 5. Push changes: `git push -u origin main`
 
-## Troubleshooting
+---
 
+## 🛠️ Troubleshooting
+
+### Sensitive Information Issues
 - If you accidentally commit sensitive information:
-  - Remove the file from tracking: `git rm --cached <file>`
-  - Add the file to .gitignore
-  - Commit the changes
-  - Push to remote
+  ```bash
+  # Remove the file from tracking
+  git rm --cached <file>
+  
+  # Add the file to .gitignore
+  echo "<file>" >> .gitignore
+  
+  # Commit the changes
+  git commit -m "Remove sensitive file from tracking"
+  
+  # Push to remote
+  git push
+  ```
 
-- To undo the last commit:
-  - `git reset --hard HEAD~1` (if you want to completely remove the commit)
-  - `git revert <commit-id>` (if you want to keep a record of the undo) 
+### Undoing Commits
+- To completely remove the last commit:
+  ```bash
+  git reset --hard HEAD~1
+  ```
+- To keep a record of the undo:
+  ```bash
+  git revert <commit-id>
+  ```
+
+---
+
+<div align="center">
+  <p><strong>Happy version controlling!</strong></p>
+</div> 
