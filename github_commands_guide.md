@@ -58,8 +58,10 @@
 | Command | Description |
 |---------|-------------|
 | `git rm --cached <file>` | Remove a file from Git tracking (keeps the file locally) |
-| `git reset --hard HEAD~1` | Undo the last commit and all changes |
-| `git revert <commit-id>` | Create a new commit that undoes changes from a specific commit |
+| `git reset --hard HEAD~1` | **DANGER!** Discard all uncommitted changes and unstaged files, and reset the current branch to the commit before HEAD. *Use with extreme caution as this can lead to data loss.* |
+| `git reset --hard <commit-id>` | **DANGER!** Discard all uncommitted changes and unstaged files, and reset the current branch to the specified `<commit-id>`. *Irreversibly loses all subsequent commits and changes.* |
+| `git reset --hard origin/main` | **DANGER!** Discard all local changes and commits on the current branch, and reset it to match the state of `origin/main`. *Use to discard local work and sync with the remote. Ensure `origin/main` is fetched and up-to-date.* |
+| `git revert <commit-id>` | Create a new commit that undoes changes from a specific commit (safer than `reset --hard` for shared history) |
 | `git commit --amend -m "message"` | Modify the last commit message |
 
 ---
