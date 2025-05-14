@@ -39,6 +39,20 @@
 
 ---
 
+## 🔄 Managing Origin and Upstream
+
+| Command | Description |
+|---------|-------------|
+| `git remote -v` | View all remote repositories |
+| `git remote remove origin` | Remove the current origin remote |
+| `git remote add upstream <original-repo-url>` | Add the original repository as upstream |
+| `git remote set-url origin <new-repo-url>` | Change the URL of the origin remote |
+| `git fetch upstream` | Fetch changes from the upstream repository |
+| `git merge upstream/main` | Merge changes from upstream's main branch |
+| `git push origin main --force` | Force push to origin (use with caution!) |
+
+---
+
 ## 📁 File Management
 
 | Command | Description |
