@@ -1,4 +1,4 @@
-# 📚 Welcome to CheddarGuides
+# 📚 Welcome to The Coding Playbook
 
 <div align="center">
   <i>A collection of developer-focused guides to boost your productivity</i>
@@ -8,7 +8,7 @@
 
 ## 🧠 About This Collection
 
-CheddarGuides is a personal collection of reference guides, cheat sheets, and tutorials for various development topics. These guides are designed to be:
+The coding playbook is a personal collection of reference guides, cheat sheets, and tutorials for various development topics. These guides are designed to be:
 
 - 🔍 **Scannable** - Easy to quickly find what you need
 - 📱 **Responsive** - Formatted to look good on any device

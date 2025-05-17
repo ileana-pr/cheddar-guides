@@ -1,4 +1,4 @@
-# 🎨 CheddarGuides Styling Guidelines
+# 🎨 Coding Playbook Styling Guidelines
 
 <div align="center">
   <i>Guidelines for creating consistent, visually appealing developer documentation</i>
