@@ -18,9 +18,10 @@
 Master version control and collaboration
 - SSH key setup & authentication
 - Essential Git commands & workflows
+- API security & .env file management
 - Advanced Git techniques
 
-**3 guides** • Beginner to Advanced
+**4 guides** • Beginner to Advanced
 
 </td>
 <td width="50%">
@@ -110,21 +111,21 @@ Create professional documentation
 
 | Category | Guides Available | Difficulty Range | Total Content |
 |----------|------------------|------------------|---------------|
-| Git & GitHub | 3 | 🟢 → 🔴 | ~65 min |
+| Git & GitHub | 4 | 🟢 → 🔴 | ~90 min |
 | Development Tools | 1 | 🟡 | ~45 min |
 | AI Development | 1 | 🟢 | ~10 min |
 | Web3 & Metaverse | 1 | 🟡 | ~45 min |
 | Career & Portfolio | 1 | 🟢 | ~2 hours |
 | Documentation | 1 | 🟢 | ~30 min |
 
-**Total: 8 comprehensive guides** covering essential developer skills
+**Total: 9 comprehensive guides** covering essential developer skills
 
 ---
 
 ## 🔍 Search by Topic
 
 **Popular Keywords:** 
-[Git](git-github/) • [GitHub](git-github/) • [SSH Setup](git-github/github_ssh_setup.md) • [CLI Commands](development-tools/dev_cli_commands.md) • [AI Prompts](ai-development/handy-ai-prompts-guide.md) • [Portfolio](career-portfolio/developer-portfolio-guide.md) • [dApp Development](web3-metaverse/) • [Metaverse](web3-metaverse/hyperfy_fork_guide.md) • [Documentation](documentation/styles.md)
+[Git](git-github/) • [GitHub](git-github/) • [SSH Setup](git-github/github_ssh_setup.md) • [API Security](git-github/env-secrets-guide.md) • [.env Files](git-github/env-secrets-guide.md) • [CLI Commands](development-tools/dev_cli_commands.md) • [AI Prompts](ai-development/handy-ai-prompts-guide.md) • [Portfolio](career-portfolio/developer-portfolio-guide.md) • [dApp Development](web3-metaverse/) • [Metaverse](web3-metaverse/hyperfy_fork_guide.md) • [Documentation](documentation/styles.md)
 
 ---
 
